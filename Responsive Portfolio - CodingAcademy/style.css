@@ -1,0 +1,547 @@
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url("assets/fonts/Ubuntu-Regular.ttf");
+}
+
+
+
+
+/* Variables */
+:root{
+    --font-ubuntu: Ubuntu;
+    --font-poppins: Poppins;
+    --theme-color: #02eab4; 
+}
+/* /Variables */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+
+/* footer styling */
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    text-align: center;
+    color: var(--theme-color);
+}
+footer p{
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+
+
+
+
+/* *************************** For Mobile (Smartphone) Screen************************************ */
+
+/* Header Styling */
+header{
+    width: 100%;
+    height: 100vh;
+    background: url("https://th.bing.com/th/id/R.5f469e4bfe3e5e545f9096113c03d7a9?rik=gldOydlM5eDzCg&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f1413981123.jpg&ehk=bF47NLz4sALyjLf%2fAmF%2b4hEhvqfK69v%2fJ2VjzZi3ijQ%3d&risl=&pid=ImgRaw&r=0") no-repeat center;
+    background-size: cover;
+    font-family: var(--font-ubuntu);
+}
+header #navbar{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 999;
+
+}
+header #navbar .logo{
+    color: rgb(255, 251, 251);
+    line-height: 70px;
+    font-size: 24px;
+    margin-left: 30px;
+}
+header #navbar .logo span{
+    color: var(--theme-color);
+}
+header nav #menuBtn{
+    color: var(--theme-color);
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    line-height: 70px;
+    right: 0;
+    margin-right: 30px;
+    cursor: pointer;
+}
+header nav ul a{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    transition: all .5s;
+}
+header nav ul a:hover{
+    color: var(--theme-color);
+}
+header nav ul li{
+    padding: 20px 0;
+}
+header nav ul{
+    width: 0%;
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+    transition: all .5s;
+}
+header .container{
+    position: absolute;
+    color: rgb(237, 235, 235);
+    padding-top: 70px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+header .container p{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+header .container h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: var(--theme-color);
+    padding: 10px 0;
+}
+header .container h2{
+    font-size: 23px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    width: 85vw;
+    padding-bottom: 20px;
+}
+header .container a{
+    font-size: 18px;
+    padding: 8px 36px;
+    color: black;
+    font-weight: 500;
+    background-color: var(--theme-color);
+}
+main{
+    font-family: var(--font-poppins);
+}
+/* about styling */
+.about{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 40px 0;
+}
+.about .col{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    display: block;
+    margin: 20px auto;
+    background-color: #eef1f6;
+}
+.about .col img{
+    width: 90%;
+    margin-top: 30px;
+}
+.about .col2 {
+    text-align: left;
+    position: relative;
+}
+.about .col2 h1{
+    font-size: 20px;
+    margin: 10px 15px;
+}
+.about .col2 p{
+    font-size: 10px;
+    width: 90%;
+    margin: 10px auto;
+}
+.about .col2 .sm-icons{
+    position: absolute;
+    bottom: 15px;
+    margin: 0 15px;
+}
+.about .col2 .sm-icons a{
+    color: black;
+    font-size: 18px;
+    padding-left: 16px;
+}
+/* services styling */
+.services{
+    width: 100%;
+    text-align: center;
+    margin: 60px 0;
+}
+.services h1{
+    font-size: 25px;
+    padding: 10px 0;
+}
+.services h2{
+    font-size: 13px;
+    width: 84%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.services .col{
+    width: 250px;
+    height: 180px;
+    margin: 30px auto;
+    display: block;
+    transition:  all .5s;
+}
+.services .col:hover{
+    transform: scale(1.1);
+}
+
+.services .col i{
+    font-size: 40px;
+    color: var(--theme-color);
+    padding-bottom: 10px;
+}
+.services .col h3{
+    font-size: 14px;
+    padding: 10px 0;
+}
+.services .col h4{
+    font-size: 10px;
+    width: 97%;
+    text-align: center;
+}
+
+/* works styling */
+.works{
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+    text-align: center;
+}
+.works h1{
+    font-size: 23px;
+}
+.works h3{
+    font-size: 12px;
+    width: 90%;
+    margin: 20px auto;
+}
+.works ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.works ul a{
+    font-size: 10px;
+    color: black;
+    font-weight: 600;
+}
+.works ul .active{
+    color: var(--theme-color);
+}
+ .works .images{
+     width: 90vw;
+     height: auto;
+     margin: 10px auto;
+ }
+ .works .images img{
+     width: 90%;
+     margin: 20px;
+     border-radius: 10px;
+ }
+
+
+
+
+
+
+/* Contact Form styling */
+ .contact{
+     width: 90vw;
+     height: auto;
+     text-align: center;
+     margin: 60px auto;
+ }
+ .contact h1{
+     font-size: 23px;
+ }
+ .contact h3{
+     font-size: 10px;
+     margin: 20px 0;
+ }
+
+ .contact .inline-container{
+     width: 100%;
+     display: block;
+ }
+.contact input , textarea{
+    display: block;
+    background-color: #f6f6fb;
+    border: none;
+    width: 70%;
+    height: 45px;
+    padding: 0 10px;
+    margin: 15px auto;
+    font-family: var(--font-ubuntu);
+    border-bottom: 2px solid #b1b1b8;
+    outline: none;
+    transition: all .5s;
+    font-size: 12px;
+}
+.contact input:hover , textarea:hover{
+    border-bottom: 2px solid var(--theme-color);
+}
+.contact textarea{
+    margin: 40px auto;
+    padding: 10px;
+    font-family: var(--font-ubuntu);
+    font-size: 12px;
+    height: 80px;
+}
+.contact button{
+    width: 75%;
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: var(--theme-color);
+    font-family: var(--font-ubuntu);
+    opacity: 0.8;
+    font-size: 14px;
+}
+.contact button:hover{
+    opacity: 1;
+    
+}
+
+/* *************************** For Tablets and ipads Screen************************************ */
+
+@media(min-width: 767px){
+
+    /* about styling */
+    .about .col{
+        width: 350px;
+        height: 350px;
+    }
+    .about .col2 h1{
+        font-size: 23px;
+    }
+    .about .col2 p{
+        font-size: 13px;
+    }
+
+    /* services styling */
+
+    .services .col{
+        width: 350px;
+        height: 230px;
+        margin: 40 auto;
+        display: block;
+        transition: all .5s;
+    }
+    .services .col:hover{
+        transform: scale(1.1);
+    }
+    .services .col i{
+        font-size: 50px;
+    }
+    .services .col h3{
+        font-size: 17px;
+    }
+    .services .col h4{
+        font-size: 12px;
+    }
+
+
+    /* Work styling */
+
+    .works h1{
+        font-size: 27px;
+    }
+    .works h3{
+        font-size: 15px;
+        width: 70%;
+        margin: 20px auto;
+    }
+    .works ul a{
+        font-size: 14px;
+    }
+     .works .images{
+         width: 90vw;
+         height: auto;
+         margin: 30px auto;
+     }
+     .works .images img{
+         width: 40%;
+     }
+
+
+     /* Contact Form styling */
+
+     .contact .inline-container input{
+         width: 32%;
+         margin: 0 12px;
+         display: inline-block;
+     }
+     .contact button{
+         width: 72.5%;
+     }
+
+
+}
+
+
+
+
+
+
+
+/* ***********************************For Tablets Ipads portrait mode and Desktops ***********************************/
+
+@media(min-width: 1024px){
+
+    /* Header styling */
+    header nav ul{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        height: auto;
+        background-color: transparent;
+        margin-left: 250px;
+        top: 0;
+    }
+    header nav ul li{
+        padding: 0 30px;
+        line-height: 70px;
+        position: relative;
+    }
+    header nav ul a{
+        font-size: 15px;
+    }
+    header nav #menuBtn{
+        display: none;
+    }
+    header nav ul li .borderBottom{
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: var(--theme-color);
+        bottom: 15px;
+        transition: all .5s;
+    }
+    header nav ul li:hover > .borderBottom{
+        width: 60px;
+    }
+    header .container{
+        margin-top: 8%;
+    }
+    header .container p{
+        font-size: 40px;
+    }
+    header .container h1{
+        font-size: 70px;
+    }
+    header .container h2{
+        font-size: 27px;
+        width: 50vw;
+    }
+    header .container a{
+        font-size: 18px;
+        padding: 8px 36px;
+        color: black;
+        font-weight: 500;
+        background-color: var(--theme-color);
+    }
+
+
+    /* About styling */
+
+    .about{
+        margin: 60px 0;
+    }
+
+    .about .col{
+        width: 350px;
+        height: 350px;
+        overflow: hidden;
+        display: inline-block;
+        margin: 20px 30px;
+    }
+
+    /* Services Styling */
+
+    .services{
+        margin: 100px 0;
+    }
+
+    .services h1{
+        font-size: 27px;
+    }
+    .services h2{
+        font-size: 12px;
+        width: 50%;
+        font-weight: 300;
+    }
+    .services .col{
+        width: 350px;
+        height: 200px;
+        display: inline-block;
+        margin: 30px 20px;
+        cursor: pointer;
+        transition: all .5s;
+    }
+    .services .col:hover{
+        transform: scale(1.1);
+    }
+
+    /* Work styling */
+    .works h1{
+        font-size: 30px;
+    }
+    .works h3{
+        font-size: 15px;
+        width: 50%;
+    }
+    .works ul li{
+        display: inline-block;
+        padding: 0 10px;
+    }
+    .works ul a{
+        font-size: 16px;
+        color: #828282;
+    }
+     .works .images img{
+         width: 25%;
+         margin: 20px;
+         border-radius: 10px;
+         box-shadow:  3px 2px 5px 1px #f2f2f2;
+     }
+
+
+     /* Contact Form styling */
+
+     .contact .inline-container input{
+        width: 33%;
+        margin: 0 12px;
+        display: inline-block;
+    }
+    .contact button{
+        width: 50%;
+        cursor: pointer;
+    }
+    .contact h3{
+        width: 60%;
+        margin: 30px auto;
+    }
+    
+}
