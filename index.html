@@ -4,141 +4,312 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Responsive Portfolio | CodingAcademy</title>
+    <title>Complete Responsive Personal Portfolio Website Design Tutorial</title>
+
+    <!-- font awesome cdn link  -->
+  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/886f545223.js" crossorigin="anonymous"></script>
+    <!-- custom css file link  -->
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+    
+<!-- header section starts  -->
 
-    <header>
-        <nav id="navbar">
-            <label class="logo">Port<span>folio </span></label>
-            <ul id="menu">
-                <li><a href="#">Home</a> <div class="borderBottom"></div> </li>
-                <li><a href="#">About</a><div class="borderBottom"></div></li>
-                <li><a href="#">Skills</a><div class="borderBottom"></div></li>
-                <li><a href="#">Blog</a><div class="borderBottom"></div></li>
-                <li><a href="#">Services</a><div class="borderBottom"></div></li>
-                <li><a href="#">Contact</a><div class="borderBottom"></div></li>
-            </ul>
-            <div class="menuBtn">
-                <i id="menuBtn" class="fas fa-bars"></i>
-            </div>
-        </nav>
-        <div class="container">
-            <p>Hello</p>
-            <h1>I'm Sahil Lagad</h1>
-            <h2>Full Stack Developer with a passion for development and excited to be at the deployment phase of my career as a web developer. Proficient in Frontend technology as well as in backend technology.</h2>
-            <a href="https://drive.google.com/file/d/1WhogoCJoEZPPOeRcMQjrUixgUXXLPoYd/view?usp=sharing">Resume <i class="fas fa-download    "></i></a>
+<header>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#myskils">my skills</a>
+        <a href="#project">project</a>
+        <a href="#contact">contact</a>
+        <a  href="https://drive.google.com/file/d/117OS9zwd2eI6wsiJxhEQ1fHS45sfRkXD/view?usp=sharing">Resume</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div id="particles-js"></div>
+
+    <div class="content">
+        <img class="tilt" src="./uidesign/WhatsApp Image 2022-08-04 at 6.28.45 PM.jpeg" alt="">
+        <h3> Sahil <span> Lagad </span> </h3>
+        <p> i am a <span class="typing-text"> Java Backend Developer </span> </p>
+        <a href="#about" class="btn">about me</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading">  <span>about</span> me</h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="https://www.iihglobal.com/wp-content/uploads/2019/02/dcsad.gif" style="width:450px; height:450px ;" alt="">
         </div>
-    </header>
 
-
-    <main>
-
-
-        <div class="about">
-            <div class="col col1">
-                <img src="https://raw.githubusercontent.com/mhmzdev/mhmzdev/master/code.gif" alt="">
-            </div>
-            <div class="col col2">
-                <h1>About Me</h1>
-                <p>
-                    Currently, I am a student at Masai school, learning full-stack web development using the Java. Coding is my passion. Since childhood, I have been very fond of technology. I started coding during my graduation. At the same time, learning HTML and CSS from youtube videos. I started liking the concept and wanted to become a Full-stack web developer. In February 2022, I came to know about Masai school via youtube ads, and at that time I began my journey 
-                    toward becoming a Full-stack web developer.
-
-                    I am highly skilled in JavaScript, Java, HTML and CSS.
+        <div class="content">
+            <h3> my name is <span> Sahil Lagad </span> </h3>
+            <p class="info">
+                A passionate JAVA Back-End Developer, Dedicated to developing robust applications that interact with the Backend part of web applications. Extensive expertise in website architecture, design, and web design, and web API designs. Problem-solving mindset with a goal to optimize my application for better stability and speed. Love to work in a team.</p>
+            <div class="box-container">
+                <div class="box" style="text-align:left ;">
+                    <p> <span> age: </span> 21 </p>
+                    <p> <span> gender: </span> male </p>
+                    <p> <span> education  : </span> Bachelor of Commerce </p>
                     
-                    I hope to work in a dynamic organization that offers opportunities and helps in my overall growth and development alongside the organization.
-                    Feel free to contact me at:
-                   sahillagad9@gmail.com
-
-
-
-
-                   <!-- https://faq.whatsapp.com/452366545421244/?helpref=uf_share
-
-                   <a href="whatsapp://send?text=WHATEVER_LINK_OR_TEXT_YOU_WANT_TO_SEND" title="Share on whatsapp">WhatsApp</a>
-                </p> href="//api.whatsapp.com/send?phone=9702556370text=WHATEVER_LINK_OR_TEXT_YOU_WANT_TO_SEND" -->
+                </div>
+                <div class="box" style="text-align:left ;">
+                    <p> <span> language : </span> hindi / english </p>
+                    <p> <span> phone : </span> 9702556370 </p>
+                    <p> <span> email : </span> sahillagad9@gmail.com </p>
+                    <p> <span> address : </span> kalyan, india - 421301 </p>
+                </div>
             </div>
-                <div class="sm-icons">
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fab fa-telegram"></i></a>
-                    <a href="https://mail.google.com/mail/u/0/#sent"><i class="fab fa-google"></i></a>
-                    <a href="https://github.com/sahillagad"><i class="fab fa-github"></i></a>
+            <a id="cv" href="https://drive.google.com/file/d/117OS9zwd2eI6wsiJxhEQ1fHS45sfRkXD/view?usp=sharing" class="btn">download CV</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- services section starts  -->
+
+<section class="myskils" id="myskils">
+
+    <h1 class="heading"> <span> my </span> skills </h1>
+
+    <div class="box-container">
+
+        <div class="box tilt">
+             <img src="https://th.bing.com/th/id/OIP.ADqbtRNCtoGE-1bvvoSQdgHaE8?w=241&h=180&c=7&r=0&o=5&dpr=1.12&pid=1.7" alt="">
+         <h3>JAVA</h3>
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, quidem.</p> -->
+        </div>
+
+        <div class="box tilt">
+         <img src="data:image/jpeg;base64,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" alt="">
+            <h3>SPRING BOOT</h3>
+           
+        </div>
+
+        <div class="box tilt">
+          <img src="https://th.bing.com/th/id/OIP.tiswwFCf18TD6pvUTxMMngAAAA?w=173&h=180&c=7&r=0&o=5&dpr=1.12&pid=1.7" alt="">
+            <h3>MAVEN </h3>
+          
+        </div>
+
+        <div class="box tilt">
+        <img src="https://th.bing.com/th/id/OIP.mGoeqnY8lZvWkEzfrtWvLwHaHa?w=155&h=180&c=7&r=0&o=5&dpr=1.12&pid=1.7" alt="">
+            <h3>HIBERNATE</h3>
+            
+        </div>
+
+        <div class="box tilt">
+            <img src="https://th.bing.com/th/id/OIP.-UxRkS1XKkPRaBTG5aGVSAHaHa?w=158&h=180&c=7&r=0&o=5&dpr=1.12&pid=1.7" alt="">
+            <h3>MY SQL</h3>
+            
+        </div>
+ 
+        <div class="box tilt">
+         <img src="https://th.bing.com/th/id/OIP.ckeUFk-yid0vfWnd56w7wAHaHa?w=185&h=185&c=7&r=0&o=5&dpr=1.12&pid=1.7" alt="">
+            <h3>GitHub</h3>
+
+        </div>
+            
+            <div class="box tilt">
+              <img src="https://th.bing.com/th/id/OIP.pqcPskVdTrJqfhZ-Z49AtQHaHn?w=192&h=197&c=7&r=0&o=5&dpr=1.12&pid=1.7" alt="">
+                    <h3>HTML</h3>
+                    
+                </div>
+        
+                <div class="box tilt">
+                    <img src="https://th.bing.com/th/id/OIP.yUIb5S_kj98Eg5tT-Onx1AHaHa?w=186&h=186&c=7&r=0&o=5&dpr=1.12&pid=1.7" alt="">
+                    <h3>CSS</h3>
+                    
                 </div>
          
+                <div class="box tilt">
+                 <img src="https://th.bing.com/th/id/OIP.BxxfUqJaajzMYP_dg3ynCQHaIW?w=158&h=180&c=7&r=0&o=5&dpr=1.12&pid=1.7" alt="">
+                    <h3>Javascript</h3>   
+
+
+</section>
+
+<!-- services section ends -->
+
+
+
+<!-- blogs section starts  -->
+
+<section class="project" id="project">
+
+    <h1 class="heading"> <span> my </span> project </h1>
+
+    <div class="box-container">
+        
+        <div class="box tilt">
+            <img src="https://pallu27899.github.io/ASSETS/IMAGES/rack.jpg" alt="">
+           
+            <h3>Nordstrom rack clone</h3>
+            <p >
+              nordstromrack.com is known for its unparalleled assortment of apparel and accessories from leading
+              fashion brands.Features: Login and
+              Signup page, Sorting for price, Add
+              to cart opt for adding items, Discount price after applying coupon. </p>
+            <p>
+                <b style="color:black ;">   <span>Tech-Stack:</span> HTML, CSS, JavaScript.</b>
+            </p>
+            
+            <a href="https://adorable-douhua-ca27a0.netlify.app/" class="btn"> Live    Demo </a>
+            <a href="https://github.com/GauravPimplekar/UNIT2-PROJECT/" class="btn">   GitHub Repo</a>
         </div>
 
+        <div class="box tilt">
+            <img src="https://laharipattanayak-portfolio.netlify.app/images/project/naukri.png" alt="">
+            <h3> Naukri Clone </h3>
+            <p>A website which is, India's No.1 job site that provides hiring-related services to corporate/recruiters, placement agencies &amp; to job-seekers in India &amp; Overseas.
+              <br>
+              <br>
 
-        <div class="services">
-            <h1>My Skills</h1>
-            <!-- <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae odio minima itaque dolore exercitationem adipisci amet quibusdam. Accusantium atque a ex cupiditate ut adipisci! Enim qui neque iste perspiciatis.</h2> -->
-            <div class="col col1">
-                <i class="fab fa-css3"></i>
-                <h3>CSS</h3>
-                <!-- <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt accusantium dolores minima cumque nihil at quod iure molestias ipsa.</h4> -->
-            </div>
-            <div class="col col2">
-                <i class="fab fa-html5"></i>
-                <h3>HTML5</h3>
-                <!-- <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt accusantium dolores minima cumque nihil at quod iure molestias ipsa.</h4> -->
-            </div>
-            <div class="col col3">
-                <i class="fab fa-java"></i>
-                <h3>Java</h3>
-                <!-- <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt accusantium dolores minima cumque nihil at quod iure molestias ipsa.</h4> -->
-            </div>
-            <div class="col col3">
-                <i class="fab fa-js-square"></i>
-                <h3>JavaScript</h3>
-                <!-- <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt accusantium dolores minima cumque nihil at quod iure molestias ipsa.</h4> -->
-            </div>
-            <div class="col col3">
-                <i class="fab fa-github"></i>
-                <h3>github</h3>
-                <!-- <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt accusantium dolores minima cumque nihil at quod iure molestias ipsa.</h4> -->
-            </div>
+               </p>
+                <p>
+                    <b style="color:black ;">     <span c>Tech-Stack:</span> HTML, CSS, JavaScript. </b>
+                  </p>
+                <a href="https://superlative-semifreddo-e68efc.netlify.app/" class="btn"> Live    Demo </a>
+            <a href="https://github.com/Lahari-1996/Naukri-Clone" class="btn">   GitHub Repo</a>
         </div>
 
-
-        <div class="works">
-            <h1>Projects</h1>
-            <!-- <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum omnis, in ad quas eveniet ratione? Unde est impedit architecto ea.</h3> -->
-            <ul>
-                <li><a class="active" href="#">UI/UX</a></li>
-                <li><a href="#">Responsive Layout</a></li>
-                <li><a href="#">HTML5</a></li>
-            </ul>
-            <div class="images">
-              <a href="https://capable-paprenjak-270ae9.netlify.app/">  <img src="./assets/uidesign/Screenshot 2022-08-23 095131.png" alt=""></a>
-              <a href="https://serene-axolotl-5bc6b7.netlify.app/">  <img src="./assets/uidesign/Screenshot 2022-08-23 095243.png" alt=""></a>
-              <a href="https://clinquant-longma-464a86.netlify.app/">  <img src="./assets//uidesign/Screenshot 2022-08-23 095504.png" alt=""></a>
-               <a href="https://rococo-gumdrop-eba098.netlify.app/"> <img src="./assets/uidesign/Screenshot 2022-08-23 100029.png" alt=""></a>
- 
-            </div>
+        <div class="box tilt">
+            <img src="./uidesign/Screenshot 2022-08-23 095131.png" alt="">
+            <h3> hospital website </h3>
+            <p>This is clone of hospital website which is a Book Appointment platform it give information of hospital services </p>
+           <br>
+           <br>
+           <br>
+            <p>
+              <b style="color:black ;">  <span c>Tech-Stack:</span> HTML, CSS, JavaScript.</b>
+              </p>
+            <a href="https://capable-paprenjak-270ae9.netlify.app/" class="btn"> Live    Demo </a>
+            <a href="https://github.com/sahillagad/Hospittal-Website/tree/main/hospital%20website" class="btn">   GitHub Repo</a>
         </div>
 
+    </div>
 
-        <div class="contact">
-            <h1>Contact Me</h1>
-         
-            <div class="inline-container">
-                <input type="text" placeholder="First Name" >
-                <input type="text" placeholder="Last Name" >
-            </div>
-            <input type="text" placeholder="Email" >
-            <textarea placeholder="Massage"></textarea>
-            <button>Send</button>
+</section>
+
+<!-- blogs section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> contact <span> me </span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="./uidesign/contact-img.svg" alt="">
         </div>
 
+        <form action="">
 
-        <footer>
-            <p>&copy; 2022 All Rights Reserved</p>
-        </footer>
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
 
-    </main>
+            <input type="text" placeholder="subject" class="box">
 
-    <script src="script.js"></script>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" class="btn" value="send message">
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section  -->
+
+<div class="footer"> created by <span> mr. sahil lagad  </span> | all rights reserved! </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript part  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+
+<!-- vanilla-tilt.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let header = document.querySelector('header');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    header.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    header.classList.remove('active');
+};
+
+var typed = new Typed('.typing-text', {
+    strings : ['Java Backend Developer', 'Java Backend Developer', 'Java Backend Developer', 'Java Backend Developer'],
+    loop : true,
+    typeSpeed : 150
+});
+
+VanillaTilt.init(document.querySelectorAll('.tilt'),{
+    max:25
+});
+
+</script>
+
 </body>
 </html>
