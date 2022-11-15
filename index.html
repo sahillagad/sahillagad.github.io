@@ -30,7 +30,7 @@
         <a href="#myskils">my skills</a>
         <a href="#project">project</a>
         <a href="#contact">contact</a>
-        <a  href="https://drive.google.com/file/d/117OS9zwd2eI6wsiJxhEQ1fHS45sfRkXD/view?usp=sharing">Resume</a>
+        <a target="_blank" href="https://drive.google.com/file/d/117OS9zwd2eI6wsiJxhEQ1fHS45sfRkXD/view?usp=sharing" >Resume</a>
     </nav>
 
 </header>
@@ -84,7 +84,10 @@
                     <p> <span> address : </span> kalyan, india - 421301 </p>
                 </div>
             </div>
-            <a id="cv" href="https://drive.google.com/file/d/117OS9zwd2eI6wsiJxhEQ1fHS45sfRkXD/view?usp=sharing" class="btn">download CV</a>
+            <!-- <a id="cv"   href="https://drive.google.com/file/d/117OS9zwd2eI6wsiJxhEQ1fHS45sfRkXD/view?usp=sharing"  class="btn" >download CV</a> -->
+            <a id="cv"  href="./SahilLagad_Resume (13) (2).pdf"   download="./SahilLagad_Resume (13) (2).pdf" class="btn" >download CV</a>
+
+          
         </div>
 
     </div>
@@ -181,8 +184,8 @@
                 <b style="color:black ;">   <span>Tech-Stack:</span> HTML, CSS, JavaScript.</b>
             </p>
             
-            <a href="https://adorable-douhua-ca27a0.netlify.app/" class="btn"> Live    Demo </a>
-            <a href="https://github.com/GauravPimplekar/UNIT2-PROJECT/" class="btn">   GitHub Repo</a>
+            <a target="_blank" href="https://adorable-douhua-ca27a0.netlify.app/" class="btn"> Live    Demo </a>
+            <a target="_blank" href="https://github.com/GauravPimplekar/UNIT2-PROJECT/" class="btn">   GitHub Repo</a>
         </div>
 
         <div class="box tilt">
@@ -196,8 +199,8 @@
                 <p>
                     <b style="color:black ;">     <span c>Tech-Stack:</span> HTML, CSS, JavaScript. </b>
                   </p>
-                <a href="https://superlative-semifreddo-e68efc.netlify.app/" class="btn"> Live    Demo </a>
-            <a href="https://github.com/Lahari-1996/Naukri-Clone" class="btn">   GitHub Repo</a>
+                <a target="_blank" href="https://superlative-semifreddo-e68efc.netlify.app/" class="btn"> Live    Demo </a>
+            <a target="_blank" href="https://github.com/Lahari-1996/Naukri-Clone" class="btn">   GitHub Repo</a>
         </div>
 
         <div class="box tilt">
@@ -210,13 +213,60 @@
             <p>
               <b style="color:black ;">  <span c>Tech-Stack:</span> HTML, CSS, JavaScript.</b>
               </p>
-            <a href="https://capable-paprenjak-270ae9.netlify.app/" class="btn"> Live    Demo </a>
-            <a href="https://github.com/sahillagad/Hospittal-Website/tree/main/hospital%20website" class="btn">   GitHub Repo</a>
+            <a target="_blank" href="https://capable-paprenjak-270ae9.netlify.app/" class="btn"> Live    Demo </a>
+            <a target="_blank" href="https://github.com/sahillagad/Hospittal-Website/tree/main/hospital%20website" class="btn">   GitHub Repo</a>
         </div>
 
     </div>
 
 </section>
+
+
+
+
+<!-- <section class="myskils" id="myskils">
+
+    <h1 class="heading"> <span> my </span> skills </h1> -->
+
+    <div class="box-container">
+
+        <div class="box tilt">
+            &nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=sahillagad&show_icons=true&locale=en" alt="sahillagad" />
+
+</div>
+
+
+<div class="box tilt">
+    <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=sahillagad&" alt="sahillagad" />
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<section class="project" id="project">   
+    <section class="cal" id="cal">
+        <div class="max-width">
+            <h2 class="title">My Github Calender</h2>
+            <div class="calendar" id="git_cal">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+</section>
+
+
 
 <!-- blogs section ends -->
 
@@ -259,14 +309,43 @@
 
 
 
+<!-- 
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=sahillagad&show_icons=true&locale=en&layout=compact" alt="sahillagad" /></p>
+
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=sahillagad&show_icons=true&locale=en" alt="sahillagad" /></p>
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=sahillagad&" alt="sahillagad" /></p>
+
+
+<section class="cal" id="cal">
+    <div class="max-width">
+        <h2 class="title">My Github Calender</h2>
+        <div class="calendar" id="git_cal">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+    </div>
+</section> -->
 
 
 
 
-
-
-
-
+<!-- Include the library. -->
+<script
+src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+    <script>
+        
+        GitHubCalendar(".calendar", "sahillagad");
+        // or enable responsive functionality:
+        GitHubCalendar(".calendar", "sahillagad", { responsive: true });
+        // Use a proxy
+        GitHubCalendar(".calendar", "sahillagad", {
+           proxy (sahillagad) {
+             return fetch("https://your-proxy.com/github?user=${sahillagad}")
+           }
+        }).then(r => r.text())
+    </script>
 
 
 
@@ -281,10 +360,15 @@
   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
 />
 
-<!-- vanilla-tilt.js link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+ <!-- vanilla-tilt.js link 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script> -->
 
 <script>
+
+
+
+
+
 
 let menu = document.querySelector('#menu-bars');
 let header = document.querySelector('header');
@@ -305,11 +389,15 @@ var typed = new Typed('.typing-text', {
     typeSpeed : 150
 });
 
-VanillaTilt.init(document.querySelectorAll('.tilt'),{
-    max:25
-});
+// VanillaTilt.init(document.querySelectorAll('.tilt'),{
+//     max:25
+// });
 
 </script>
 
 </body>
 </html>
+
+
+
+
