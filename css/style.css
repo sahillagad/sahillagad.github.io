@@ -442,6 +442,9 @@ header .navbar a:hover{
     }
 
  
+    .calanderDiv{
+        padding: 20px;
+    }
     
     .heading{
         font-size: 4rem;
