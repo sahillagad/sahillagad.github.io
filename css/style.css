@@ -310,7 +310,9 @@ header .navbar a:hover{
     gap:1.5rem;
   
 }
-
+.contact{
+    padding-bottom: 10px;
+}
 
 
 .contact .row .image{
